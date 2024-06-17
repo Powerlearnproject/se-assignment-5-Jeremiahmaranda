@@ -92,12 +92,38 @@ Another way to create files and folders in VS Code is to right click in the Expl
 
 8. Settings and Preferences:
    - Where can users find and customize settings in VS Code? Provide examples of how to change the theme, font size, and keybindings.
+   - Use the Settings editor to review and change VS Code settings. To open the Settings editor, navigate to File > Preferences > Settings. Alternately, open the Settings editor from the Command Palette (Ctrl+Shift+P) with Preferences: Open Settings or use the keyboard shortcut (Ctrl+,).
+When you open the Settings editor, you can search and discover the settings you are looking for. When you search using the search bar, it not only shows and highlights the settings matching your criteria, but also filter out those which are not matching. This makes finding settings quick and easy
+   - Here's how to change the color theme of the IDE frame and the tool windows in Visual Studio.
+On the menu bar, select Tools > Options.
+In the options list, select Environment > General.
+In the Color theme list, select either the default Dark theme, the Light theme, the Blue theme, or the Blue (Extra Contrast) theme.
+You can also choose to use the theme that Windows uses by selecting Use system setting.
+To change the font and text size in the IDE
+On the menu bar, select Tools > Options.
+In the options list, select Environment > Fonts and Colors.
+In the Show settings for list, select Environment
+Modify the Font and Size options to change the font and text size for the IDE.
+Select the appropriate item in Display items, and then modify the Item foreground and Item background options
+
 
 9. Debugging in VS Code:
    - Outline the steps to set up and start debugging a simple program in VS Code. What are some key debugging features available in VS Code?
+   - VS Code's built-in debugger helps accelerate your edit, compile, and debug loop.To bring up the Run and Debug view, select the Run and Debug icon in the Activity Bar on the side of VS Code. You can also use the keyboard shortcut Ctrl+Shift+D.The Run and Debug view displays all information related to running and debugging and has a top bar with debugging commands and configuration settings.To run or debug a simple app in VS Code, select Run and Debug on the Debug start view or press F5 and VS Code will try to run your currently active file.
+If running and debugging is not yet configured (no launch.json has been created), VS Code shows the Run start view.
+   - For debugging other languages and runtimes (including PHP, Ruby, Go, C#, Python, C++, PowerShell and many others), look for Debuggers extensions in the VS Code Marketplace or select Install Additional Debuggers in the top-level Run menu.
 
 10. Using Source Control:
     - How can users integrate Git with VS Code for version control? Describe the process of initializing a repository, making commits, and pushing changes to GitHub.
+    -  you can enable Git source control by creating a Git repository with the Initialize Repository command. When VS Code doesn't detect an existing Git repository, the Source Control view will give you the options to Initialize Repository or Publish to GitHub.
+    -  You can also run the Git: Initialize Repository and Publish to GitHub commands from the Command Palette (Ctrl+Shift+P). Running Initialize Repository will create the necessary Git repository metadata files and show your workspace files as untracked changes ready to be staged. Publish to GitHub will directly publish your workspace folder to a GitHub repository, allowing you to choose between private and public repositories.
+  
+    - Initializing a Git repository
+Open Terminal .
+Navigate to the root directory of your project.
+Initialize the local directory as a Git repository. By default, the initial branch is called main . ...
+Add the files in your new local repository. ...
+Commit the files that you've staged in your local repository. 
 
  Submission Guidelines:
 - Your answers should be well-structured, concise, and to the point.
